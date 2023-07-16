@@ -1,0 +1,19 @@
+# : represent important thing or file name
+- : important line
+
+composition: Generally, this approach of building a user interface from smaller building blocks.
+
+# Card.js
+From Card.js, we learn the concept of Composition, where we are using props.children to render the other components
+# props.children: It is reserve keyword from React
+props.className: Whatever we pass from ExpenseItem to where we render same will be card.js to render
+<card className="ExpenseItem">Inside Content</card>
+
+You can think that data and className coming from ExpenseItem.js and passing to card.js for rendering.
+
+
+- In React, We build user interface by building and combining components.
+
+# Why is React all about "Components"?
+
+Every UI in the end up is made up of multiple building blocks (= components), hence it makes sense to think about user interfaces as "combinations of components"
