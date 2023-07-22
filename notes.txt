@@ -17,3 +17,24 @@ You can think that data and className coming from ExpenseItem.js and passing to 
 # Why is React all about "Components"?
 
 Every UI in the end up is made up of multiple building blocks (= components), hence it makes sense to think about user interfaces as "combinations of components"
+
+# Closer look at JSX?
+return (
+    <div>
+      <h2>Let's get started!</h2>
+      <Expenses items={expenses} />
+    </div>
+  );
+Before React v18, or earlier version --
+It import 'React' in every JSX file then it will be use below function to create element. Above code return  like this.
+
+import React from 'react';
+import Expenses from './components/Expenses';
+
+// Object of properties need to be set is 2nd parameter in this list.
+
+return React.createElement(
+    'div', {}, 
+    React.createElement('h2', {}, 'Lets get started!'),
+    React.createElement(Expenses, {items: expenses})
+);
